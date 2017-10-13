@@ -1,6 +1,6 @@
 # koFast
 
-koFast 是一个在 kohana(koseven) 的基础上封装并搭建的一个项目快速开发模板
+koFast 是一个在 kohana(koseven) 的基础上扩展的一个快速开发项目模板
 
 # 初衷
 
