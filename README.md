@@ -44,7 +44,7 @@ app 里只需要专注于 controller 的输入输出处理即可
 - 增加 session 存储到 memcache redis功能
 
 # 登录页面示例预览
-![image](https://github.com/phachon/kofast/blob/master/doc/img/ace.png)
+![image](https://github.com/phachon/kofast/blob/master/doc/img/kofast-login.png)
 
 # 安装使用
 下载： https://github.com/phachon/kofast
