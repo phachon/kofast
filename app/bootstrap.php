@@ -161,11 +161,11 @@ Kohana::modules(array(
 	// 'pagination' => MODPATH.'pagination', // Pagination
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-	 'business' => BUSSPATH,
-	 'dao'      => EXTENDPATH.'dao',
-	 'logger'   => EXTENDPATH.'logger',
-	 'captchas'     => EXTENDPATH.'captchas',
-	 'misc'     => EXTENDPATH.'misc',
+	 'service'  => SERPATH,
+	 'dao'      => EXTPATH.'dao',
+	 'logger'   => EXTPATH.'logger',
+	 'captchas' => EXTPATH.'captchas',
+	 'misc'     => EXTPATH.'misc',
 	));
 
 /**

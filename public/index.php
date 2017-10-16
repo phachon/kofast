@@ -13,7 +13,7 @@ $application = '../app';
  *
  * @link http://kohanaframework.org/guide/about.install#modules
  */
-$modules = '../koseven/modules';
+$modules = '../kofast/koseven/modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,19 +21,19 @@ $modules = '../koseven/modules';
  *
  * @link http://kohanaframework.org/guide/about.install#system
  */
-$system = '../koseven/system';
+$system = '../kofast/koseven/system';
 
 /**
  * koseven modules extends
  * add by phachon@163.com
  */
-$extends = '../koseven/extends';
+$extends = '../kofast/extends';
 
 /**
- * application business
+ * application service
  * add by phachon@163.com
  */
-$business = '../business';
+$service = '../service';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -87,8 +87,8 @@ if ( ! is_dir($extends) AND is_dir(DOCROOT.$extends))
 
 // Make the system relative to the docroot, for symlink'd index.php
 // add by phachon@163.com
-if ( ! is_dir($business) AND is_dir(DOCROOT.$business))
-	$business = DOCROOT.$business;
+if ( ! is_dir($service) AND is_dir(DOCROOT.$service))
+	$service = DOCROOT.$service;
 
 // Define the absolute paths for configured directories
 define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
@@ -96,17 +96,19 @@ define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
 define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
 
 //add by phachon@163.com
-define('EXTENDPATH', realpath($extends).DIRECTORY_SEPARATOR);
-define('BUSSPATH', realpath($business).DIRECTORY_SEPARATOR);
+define('EXTPATH', realpath($extends).DIRECTORY_SEPARATOR);
+define('SERPATH', realpath($service).DIRECTORY_SEPARATOR);
 define('PORTAL', basename(__FILE__));
 define('MODULEDIR', '/');
 define('CACHEDIR', realpath($application.'/cache').DIRECTORY_SEPARATOR);
 define('LOGDIR', realpath($application.'/logs').DIRECTORY_SEPARATOR);
+
+//default controller action
 $defaultController = 'welcome';
 $defaultAction = 'index';
 
 // Clean up the configuration vars
-unset($application, $modules, $system, $extends, $business);
+unset($application, $modules, $system, $extends, $service);
 
 if (file_exists('install'.EXT))
 {
