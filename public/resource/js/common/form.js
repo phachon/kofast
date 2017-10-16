@@ -1,6 +1,7 @@
 /**
- * 表单提交类
- * Copyright (c) 2016 PanChao
+ * 表单提交类实现
+ * 依赖 jquery.form.js 插件
+ * Copyright (c) 2016 phachon@163.com
  */
 var Form = {
 

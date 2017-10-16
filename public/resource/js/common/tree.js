@@ -1,6 +1,7 @@
 /**
  * 树状类实现
  * 依赖 jquery treeview 插件
+ *  使用示例:
 var data = [];
 
 data.push({id : '1', name : '一级分类1', value : '1', parent : '0',  operate: ' [<a href="/index.php/department/edit/department_id:1">编辑</a> | <a href="/index.php/department/delete/department_id:1" onclick="Common.confirm(\'确定删除吗？\');">删除</a>]'});
@@ -27,7 +28,7 @@ function Tree(container, data) {
 	this.data = data;
 	this.level = 1;
 	this.currentLevel = 0;
-};
+}
 
 Tree.prototype = {
 	/**

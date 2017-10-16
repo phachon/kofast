@@ -1,6 +1,7 @@
 /**
- * iframe弹出框类,依赖 jQuery.layer.js 插件
- * Copyright (c) 2016 panchao
+ * iframe 弹出框类实现
+ * 依赖 jQuery.layer.js 插件
+ * Copyright (c) 2016 phachon@163.com
  */
 var Popup = {
 
@@ -61,9 +62,6 @@ var Popup = {
 
 	/**
 	 * 绑定为 iframe 层
-	 * @param  String element
-	 * @param  String title
-	 * @param  String content
 	 * @return String 
 	 */
 	bindIframe : function (element, title, content) {
@@ -78,9 +76,6 @@ var Popup = {
 
 	/**
 	 * 绑定为 iframe 框
-	 * @param  String element
-	 * @param  String title
-	 * @param  String content
 	 * @return String 
 	 */
 	bindIframeWinow : function (element, title, content) {
@@ -113,10 +108,10 @@ var Popup = {
 					shade: Popup.shade,
 					maxmin: Popup.maxmin,
 					area: Popup.area,
-					content: Popup.content,
+					content: Popup.content
 				});
 				Popup.content = null;
 			});
 		});
 	}
-}
+};

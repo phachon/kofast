@@ -1,6 +1,7 @@
 /**
- * editor 编辑器类
- * Copyright (c) 2016 panchao
+ * 文本编辑器类实现
+ * 依赖 UEditor 插件
+ * Copyright (c) 2016 phachon@163.com
  */
 var Editor = {
 	
@@ -23,7 +24,7 @@ var Editor = {
 				'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
 				'preview'
 			]],
-			serverUrl: 'http://acdyx.com/website/ueditor/upload',
+			serverUrl: 'http://test.com/website/ueditor/upload',
 			textarea: 'description',
 			autoHeightEnabled: true,
 			autoFloatEnabled: true
