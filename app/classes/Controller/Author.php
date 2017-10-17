@@ -79,7 +79,7 @@ class Controller_Author extends Controller_Render {
 
 		header('Content-type: image/jpeg');
 
-		$captchaConfig = Kohana::$config->load('captcha.default');
+		$captchaConfig = Kohana::$config->load('captcha.default')->as_array();
 		$length = Arr::get($captchaConfig, 'length', 4);
 		$charset = Arr::get($captchaConfig, 'charset', 'abcdefghijklmnpqrstuvwxyz123456789');
 

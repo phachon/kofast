@@ -60,16 +60,16 @@ class UEditor {
 		$type = Arr::get($config, 'type', '');
 
 		if($this->_action == 'default') {
-			return Ueditor_Result::factory($this->_returnType, $config)->execute();
+			return UEditor_Result::factory($this->_returnType, $config)->execute();
 		}
 		if($this->_action == 'config') {
-			return Ueditor_Result::factory($this->_returnType, $config)->execute();
+			return UEditor_Result::factory($this->_returnType, $config)->execute();
 		}
 		if($handle == 'upload') {
-			return Ueditor_Upload::factory($type)->config($config)->returnType($this->_returnType)->execute();
+			return UEditor_Upload::factory($type)->config($config)->returnType($this->_returnType)->execute();
 		}
 		if($handle == 'list') {
-			return Ueditor_List::factory($type)->config($config)->returnType($this->_returnType)->execute();
+			return UEditor_List::factory($type)->config($config)->returnType($this->_returnType)->execute();
 		}
 	}
 }

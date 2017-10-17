@@ -164,7 +164,7 @@ Kohana::modules(array(
 	 'service'  => SERPATH,
 	 'dao'      => EXTPATH.'dao',
 	 'logger'   => EXTPATH.'logger',
-	 'captchas' => EXTPATH.'captchas',
+	 'captcha'  => EXTPATH.'captcha',
 	 'misc'     => EXTPATH.'misc',
 	));
 
